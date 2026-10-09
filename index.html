@@ -3,73 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic profile and selected publications of Mohsen Jalaeian-Farimani.">
-  <title>Mohsen Jalaeian-Farimani | Academic Profile</title>
+  <meta name="description" content="Academic website of Mohsen Jalaeian-Farimani: control engineering, robotics, reinforcement learning, optimization, publications, and projects.">
+  <meta name="author" content="Mohsen Jalaeian-Farimani">
+  <title>Mohsen Jalaeian-Farimani | Control, Robotics and AI</title>
   <style>
-    :root{--navy:#102a43;--blue:#245b8a;--pale:#eef4f8;--text:#243b53;--muted:#627d98;--white:#fff;--line:#d9e2ec}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:#f7f9fb;line-height:1.65}
-    a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
-    .layout{display:grid;grid-template-columns:300px 1fr;min-height:100vh}
-    aside{position:fixed;inset:0 auto 0 0;width:300px;background:var(--navy);color:var(--white);padding:36px 28px;overflow-y:auto}
-    .photo{width:164px;height:164px;display:block;margin:0 auto 20px;object-fit:cover;object-position:center;border:4px solid rgba(255,255,255,.92);box-shadow:0 8px 30px rgba(0,0,0,.22)}
-    h1{font-size:1.55rem;line-height:1.25;text-align:center;margin:0}.role{text-align:center;color:#c9d8e6;font-size:.94rem;margin:10px 0 28px}
-    nav a{display:block;color:#e6f0f7;padding:11px 13px;margin:6px 0;border-radius:7px;border-left:3px solid transparent}nav a:hover,nav a.active{background:rgba(255,255,255,.09);border-left-color:#9fb3c8;text-decoration:none}
-    .side-note{font-size:.78rem;color:#a9c0d2;margin-top:30px;text-align:center}
-    main{grid-column:2;padding:60px clamp(28px,6vw,90px);max-width:1150px}
-    .hero{padding:46px;background:linear-gradient(135deg,#fff,#edf4f8);border:1px solid var(--line);border-radius:14px;margin-bottom:30px}
-    .hero h2{font-size:2.15rem;color:var(--navy);margin:0 0 10px}.hero p{font-size:1.06rem;color:var(--muted);max-width:780px;margin:0}
-    section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px 38px;margin:24px 0;box-shadow:0 5px 18px rgba(16,42,67,.04)}
-    h3{font-size:1.45rem;color:var(--navy);margin:0 0 22px;padding-bottom:10px;border-bottom:2px solid var(--pale)}
-    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}.contact-card{padding:17px;background:var(--pale);border-radius:9px}.label{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:4px}
-    .publication{padding:19px 0;border-bottom:1px solid var(--line)}.publication:last-child{border-bottom:0}.publication-title{font-weight:700;color:var(--navy)}.publication-meta{font-size:.91rem;color:var(--muted);margin-top:5px}.tag{display:inline-block;font-size:.72rem;font-weight:700;background:var(--pale);color:var(--blue);padding:3px 8px;border-radius:999px;margin-top:8px}
-    footer{color:var(--muted);font-size:.85rem;text-align:center;padding:25px}
-    @media(max-width:820px){.layout{display:block}aside{position:relative;width:100%;min-height:auto}.photo{width:130px;height:130px}nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}nav a{display:inline-block}main{padding:28px 18px}.hero,section{padding:25px 22px}.hero h2{font-size:1.7rem}}
+    :root{--ink:#183247;--navy:#0b2538;--blue:#1c6085;--teal:#287e7b;--paper:#f5f8fa;--white:#fff;--muted:#647b8c;--line:#d8e2e8;--soft:#eaf2f5;--warn:#fff8df}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.68}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+    .shell{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}.sidebar{position:fixed;left:0;top:0;bottom:0;width:320px;background:linear-gradient(180deg,var(--navy),#113d55);color:#fff;padding:34px 29px;overflow:auto}.portrait{width:170px;height:170px;object-fit:cover;display:block;margin:0 auto 18px;border:4px solid rgba(255,255,255,.92);box-shadow:0 12px 35px rgba(0,0,0,.25)}.name{text-align:center;font-size:1.52rem;line-height:1.25;margin:0}.subtitle{text-align:center;color:#c6d9e4;font-size:.91rem;margin:9px 0 24px}.sidebar nav a{display:flex;align-items:center;color:#e8f2f6;padding:10px 13px;border-radius:7px;margin:5px 0;border-left:3px solid transparent}.sidebar nav a:hover,.sidebar nav a.active{background:rgba(255,255,255,.1);border-left-color:#88c4c0;text-decoration:none}.quick-links{border-top:1px solid rgba(255,255,255,.18);margin-top:24px;padding-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.quick-links a{font-size:.78rem;color:#e8f2f6;border:1px solid rgba(255,255,255,.3);padding:5px 9px;border-radius:999px}
+    main{grid-column:2;padding:52px clamp(28px,5vw,78px);max-width:1280px}.hero{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:15px;padding:52px 48px;margin-bottom:25px}.hero:after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;right:-95px;top:-110px;background:linear-gradient(135deg,#dcecf1,#e7f4f1)}.eyebrow{color:var(--teal);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem}.hero h2{font-size:2.55rem;line-height:1.15;color:var(--navy);margin:10px 0 15px;max-width:820px}.hero p{font-size:1.06rem;color:var(--muted);max-width:850px;margin:0}.draft-note{margin-top:20px;background:var(--warn);border-left:4px solid #ca9b20;padding:12px 15px;font-size:.86rem;max-width:900px}
+    section{background:#fff;border:1px solid var(--line);border-radius:15px;padding:36px 40px;margin:23px 0;box-shadow:0 6px 22px rgba(11,37,56,.035)}section h3{font-size:1.48rem;color:var(--navy);margin:0 0 24px;padding-bottom:11px;border-bottom:2px solid var(--soft)}h4{color:var(--navy);margin:0 0 7px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{padding:18px;background:var(--soft);border-radius:10px}.label{display:block;font-size:.73rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--muted);margin-bottom:5px}.timeline{position:relative;margin-left:8px}.timeline:before{content:"";position:absolute;left:6px;top:5px;bottom:5px;width:2px;background:var(--line)}.timeline-item{position:relative;padding:0 0 25px 31px}.timeline-item:before{content:"";position:absolute;left:0;top:7px;width:14px;height:14px;border-radius:50%;background:var(--teal);border:3px solid #e3f1f0}.period{font-size:.82rem;color:var(--teal);font-weight:800}.meta{color:var(--muted);font-size:.91rem}.interests{display:flex;flex-wrap:wrap;gap:10px}.interest{background:var(--soft);border:1px solid #d4e6ea;padding:8px 12px;border-radius:999px;font-size:.9rem;font-weight:650;color:#285269}.project{padding:20px 0;border-bottom:1px solid var(--line)}.project:last-child,.pub:last-child{border-bottom:0}.project p{margin:6px 0 0;color:var(--muted)}.pub{padding:18px 0;border-bottom:1px solid var(--line)}.pub-title{font-weight:750;color:var(--navy)}.pub-meta{font-size:.9rem;color:var(--muted);margin-top:5px}.chips{margin-top:9px}.chip{display:inline-block;font-size:.71rem;font-weight:800;background:var(--soft);color:var(--blue);padding:3px 8px;border-radius:999px;margin:0 5px 4px 0}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}.event-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}.event-card{padding:22px;border:1px solid var(--line);border-radius:11px;background:linear-gradient(145deg,#fff,#f7fafc)}.event-card h4{font-size:1.08rem;line-height:1.4;color:var(--navy);margin:0 0 9px}.event-role{font-weight:800;color:var(--blue);margin-bottom:10px}.event-meta{font-size:.91rem;color:var(--muted);margin:6px 0}.event-link{display:inline-block;margin-top:12px;font-weight:750}.callout{background:#eff7f7;border-left:4px solid var(--teal);padding:16px 18px;margin-top:18px}.footer{text-align:center;color:var(--muted);font-size:.83rem;padding:25px}
+    @media(max-width:880px){.shell{display:block}.sidebar{position:relative;width:100%;bottom:auto}.portrait{width:135px;height:135px}.sidebar nav{display:flex;flex-wrap:wrap;justify-content:center}.sidebar nav a{display:inline-flex}main{padding:27px 17px}.hero,section{padding:27px 23px}.hero h2{font-size:1.85rem}.two-col{grid-template-columns:1fr}}
+    @media print{.sidebar{display:none}.shell{display:block}main{padding:0;max-width:none}section,.hero{box-shadow:none;break-inside:avoid}.draft-note{display:none}}
+
+    /* Teaching: four balanced, responsive academic-profile cards */
+    .teaching-intro{max-width:880px;margin:-7px 0 23px;color:var(--muted);font-size:.97rem}
+    .teaching-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+    .teaching-card{min-width:0;padding:23px 23px 21px;border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:11px;background:linear-gradient(145deg,#fff,#f6fafb)}
+    .teaching-card-kicker{display:block;margin-bottom:9px;color:var(--teal);font-size:.71rem;letter-spacing:.08em;font-weight:800;text-transform:uppercase}
+    .teaching-card h4{font-size:1.08rem;line-height:1.38;margin:0 0 10px}
+    .teaching-card p{font-size:.92rem;line-height:1.66;color:#4c6271;margin:0}
+    .teaching-card strong{color:var(--navy);font-weight:750}
+    @media(max-width:650px){.teaching-grid{grid-template-columns:1fr}.teaching-card{padding:20px}}
+    @media print{.teaching-card{break-inside:avoid}}
   </style>
 </head>
 <body>
-<div class="layout">
-  <aside>
-    <img class="photo" src="foto.png" alt="Portrait of Mohsen Jalaeian-Farimani">
-    <h1>Mohsen Jalaeian-Farimani</h1>
-    <div class="role">Assistant Professor<br>Control, Robotics &amp; AI</div>
-    <nav aria-label="Main navigation">
+<div class="shell">
+  <aside class="sidebar">
+    <img class="portrait" src="foto.png" alt="Portrait of Mohsen Jalaeian-Farimani">
+    <h1 class="name">Mohsen Jalaeian-Farimani</h1>
+    <div class="subtitle">Assistant Professor, Ph.D., DEIB, Politecnico di Milano, Italy.</div>
+    <div class="subtitle">Control Engineering, Optimization, Robotics, Machine Learning &amp; Artificial Intelligence</div>
+    <nav aria-label="Website sections">
       <a href="#contact">Contact Information</a>
+      <a href="#employment">Professional Experience</a>
+      <a href="#education">Education</a>
+      <a href="#interests">Research Interests</a>
+      <a href="#projects">Research Projects</a>
       <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#academic-events">Special Issue &amp; Conference</a>
+      <a href="#service">Academic Service</a>
     </nav>
-    <div class="side-note">Academic website · Politecnico di Milano</div>
+    <div class="quick-links">
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=LU7XWE8AAAAJ" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://re.public.polimi.it/cris/rp/rp246967" target="_blank" rel="noopener">Polimi Research</a>
+      <a href="https://github.com/MohsenJalaeian" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:mohsen.jalaeian@polimi.it">Email</a>
+    </div>
   </aside>
 
   <main>
     <header class="hero">
-      <h2>Academic Profile</h2>
-      <p>Assistant Professor at the Department of Electronics, Information and Bioengineering, Politecnico di Milano, working at the intersection of control engineering, robotics, reinforcement learning, and optimization.</p>
+      <div class="eyebrow">Control · Robotics · Optimization · Machine Learning</div>
+      <h2>Intelligent control and learning methods for autonomous and robotic systems</h2>
+      <p>My research combines model-based control, reinforcement learning, optimization, and machine learning to develop reliable and computationally efficient methods for nonlinear systems, mobile robots, autonomous systems, safety-critical decision-making, rehabilitation, human-robot interaction, and healthcare applications.</p>
     </header>
 
     <section id="contact">
       <h3>Contact Information</h3>
-      <div class="contact-grid">
-        <div class="contact-card"><span class="label">Institutional email</span><a href="mailto:mohsen.jalaeian@polimi.it">mohsen.jalaeian@polimi.it</a></div>
+      <div class="grid">
+        <div class="card"><span class="label">Institutional email</span><a href="mailto:mohsen.jalaeian@polimi.it">mohsen.jalaeian@polimi.it</a></div>
+        <div class="card"><span class="label">Personal email</span><a href="mailto:m.jalaeian.f@gmail.com">m.jalaeian.f@gmail.com</a></div>
+        <div class="card"><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/mohsen-jalaeian-farimani/">My LinkedIn Profile</a></div>
+        <div class="card"><span class="label">Affiliation</span>Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano</div>
+        <div class="card"><span class="label">Laboratory</span><a href="https://rosetea.deib.polimi.it/?page_id=155" target="_blank" rel="noopener">ROSETEA Laboratory</a>, Cremona, Italy</div>
+        <div class="card"><span class="label">Institutional profile</span><a href="https://www.deib.polimi.it/eng/people/details/2012404" target="_blank" rel="noopener">DEIB academic profile</a></div>
       </div>
+    </section>
+
+    <section id="employment">
+      <h3>Professional Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item"><div class="period">Current</div><h4>Assistant Professor (RTDA)</h4><div class="meta">Department of Electronics, Information and Bioengineering, Politecnico di Milano, Italy</div><p>Research and teaching in robotics, control engineering, autonomous systems, reinforcement learning, and optimization. I have developed a novel navigation control software as a ground-control-station for autonomuous field agricultural robots, based on ROS2-Nav2 platform.</p></div>
+        <div class="timeline-item"><div class="period">Previous academic and technical experience</div><h4>Senior Lecturer, Laboratory Manager, and Faculty Supervisor</h4><div class="meta">Montazeri Technical College of Mashhad (MTCM), Iran</div><p>Research and teaching in Electrical and Control Engineering, Robotics, and Automation. Specifically, I have been involved in designing and developing industrial-level complex parallel robots, human-robot interaction, social robots, and mentoring students in research projects.</p></div>
+        <div class="timeline-item"><div class="period">Previous academic and technical experience</div><h4>Researcher, Laboratory Manager, and Control Engineer</h4><div class="meta">FUM Parallel Robots Laboratory and Center of Excellence on Soft Computing and Intelligent Information Processing (SCIIP), Ferdowsi University of Mashhad, Iran</div><p>Research and development in parallel robotics, intelligent control, fuzzy systems, and experimental control engineering.</p></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h3>Education</h3>
+      <div class="timeline">
+        <div class="timeline-item"><div class="period">2020</div><h4>Ph.D. in Robotics and Control Engineering</h4><div class="meta">Shahrood University of Technology, Iran</div></div>
+        <div class="timeline-item"><div class="period">2012</div><h4>M.Sc. in Control Engineering</h4><div class="meta">Ferdowsi University of Mashhad, Iran</div></div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h3>Research Interests</h3>
+      <div class="interests">
+        <span class="interest">Control Theory</span><span class="interest">Reinforcement Learning</span><span class="interest">Safe Reinforcement Learning</span><span class="interest">Model Predictive Control</span><span class="interest">Nonlinear Optimal Control</span><span class="interest">Mobile Robotics</span><span class="interest">Learning-Based Control</span><span class="interest">Robot Navigation</span><span class="interest">Physics-Informed Machine Learning</span><span class="interest">Fuzzy Systems</span><span class="interest">Evolutionary Optimization</span><span class="interest">Digital Twins</span><span class="interest">ROS 2 and Nav2</span><span class="interest">Autonomous Systems</span><span class="interest">Optimization</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>Selected Research Projects</h3>
+      <article class="project"><h4>Learning-Based Modelling and Control of Tracked Mobile Robots</h4><p>Development of data-driven and physics-informed models for velocity prediction, slip estimation, and robust motion control of tracked skid-steering robots using ROS-2 and Nav2 experiments, application to Nonlinear Model Predictive Control (NMPC).</p></article>
+      <article class="project"><h4>Interpretable and Sample-Efficient Reinforcement Learning</h4><p>Design of fuzzy reinforcement-learning architectures, eligibility-trace mechanisms, structured experience replay, and theoretically grounded learning algorithms for continuous control.</p></article>
+      <article class="project"><h4>Safe Reinforcement Learning for Nonlinear Optimal Control</h4><p>Integration of actor-critic learning, adaptive experience replay, and safety-aware control formulations for uncertain nonlinear systems and constrained decision-making.</p></article>
+      <article class="project"><h4>Reinforcement Learning-Model Predictive Control Integration</h4><p>Systematic analysis and methodological development of RL-MPC architectures, with emphasis on linear and linearized models, constraints, robustness, sample efficiency, and closed-loop guarantees.</p></article>
+      <article class="project"><h4>Autonomous Navigation and Cooperative Mobile Robotics</h4><p>ROS 2/Nav2-based navigation, learning-enhanced motion prediction, autonomous mobile robotics, and cooperative multi-robot control using model predictive path integral (MPPI) methods.</p></article>
+      <article class="project"><h4>Dynamic and Non-Stationary Optimization</h4><p>Development of event-triggered and population-based optimization methods for dynamic environments, engineering optimization, and real-time adaptation.</p></article>
     </section>
 
     <section id="publications">
       <h3>Selected Publications</h3>
-      <article class="publication"><div class="publication-title">Experience Replay in Reinforcement Learning: A Systematic Review</div><div class="publication-meta">R. Khalili Amirabadi, M. Jalaeian-Farimani, and O. Solaymani Fard · ISA Transactions, vol. 168, pp. 465–478, 2026.</div><span class="tag">Reinforcement Learning</span></article>
-      <article class="publication"><div class="publication-title">Self-Organizing Dual-Buffer Adaptive Clustering Experience Replay (SODACER) for Safe Reinforcement Learning in Optimal Control</div><div class="publication-meta">R. Khalili-Amirabadi, M. Jalaeian-Farimani, and O. Solaymani-Fard · Scientific Reports, 2026.</div><span class="tag">Safe RL</span></article>
-      <article class="publication"><div class="publication-title">Event-Triggered Dynamic Seed Invasive Weed Optimization (ET-DSIWO): A Nature-Inspired Approach for Non-Stationary Optimization</div><div class="publication-meta">M. Jalaeian Farimani, R. Khalili Amirabadi, M. Esmaeili Ranjbar, and S. Samadzadeh · Nonlinear Dynamics, vol. 113, pp. 27611–27636, 2025.</div><span class="tag">Optimization</span></article>
-      <article class="publication"><div class="publication-title">Towards Optimal Control of HPV Model Using Safe Reinforcement Learning with Actor–Critic Neural Networks</div><div class="publication-meta">R. Khalili Amirabadi, O. S. Fard, and M. Jalaeian Farimani · Expert Systems with Applications, vol. 264, 2025.</div><span class="tag">Optimal Control</span></article>
-      <article class="publication"><div class="publication-title">Bi-Level Adaptive Computed-Current Impedance Controller for Electrically Driven Robots</div><div class="publication-meta">M. Jalaeian-Farimani, M. M. Fateh, and M. Rahimiyan · Robotica, vol. 39, no. 2, pp. 200–216, 2021.</div><span class="tag">Robot Control</span></article>
-      <article class="publication"><div class="publication-title">Optimal Predictive Impedance Control in the Presence of Uncertainty for a Lower Limb Rehabilitation Robot</div><div class="publication-meta">M. Jalaeian-Farimani, M. M. Fateh, and M. Rahimiyan · Journal of Systems Science and Complexity, vol. 33, no. 5, pp. 1310–1329, 2020.</div><span class="tag">Predictive Control</span></article>
-      <article class="publication"><div class="publication-title">Position Tracking of a 3-PSP Parallel Robot Using Dynamic Growing Interval Type-2 Fuzzy Neural Control</div><div class="publication-meta">S. F. Toloue, M. R. Akbarzadeh, A. Akbarzadeh, and M. Jalaeian-Farimani · Applied Soft Computing, vol. 37, pp. 1–14, 2015.</div><span class="tag">Fuzzy Control</span></article>
+      <article class="pub"><div class="pub-title">Experience Replay in Reinforcement Learning: A Systematic Review</div><div class="pub-meta">ISA Transactions, 168, 465-478, 2026.</div><div class="pub-meta">DOI: <a href="https://doi.org/10.1016/j.neucom.2026.134403" target="_blank" rel="noopener">10.1016/j.neucom.2026.134403</a></div><div class="chips"><span class="chip">Experience Replay</span><span class="chip">Reinforcement Learning</span><span class="chip">Systematic Review</span></div></article>
+      <article class="pub"><div class="pub-title">Self-Organizing Dual-Buffer Adaptive Clustering Experience Replay (SODACER) for Safe Reinforcement Learning in Optimal Control</div><div class="pub-meta">R. Khalili-Amirabadi, M. Jalaeian-Farimani, and O. Solaymani-Fard · Scientific Reports, 2026.</div><div class="chips"><span class="chip">Safe RL</span><span class="chip">Experience Replay</span></div></article>
+      <article class="pub"><div class="pub-title">LSTM-Empowered Reinforcement Learning in Bi-Level Optimal Control for Nonlinear Systems with Uncertain Dynamics</div><div class="pub-meta">R. K. Amirabadi, M. Jalaeian-Farimani, and O. S. Fard · ISA Transactions, 168, 465-478, 2026. <strong>[Verify final pagination]</strong></div><div class="chips"><span class="chip">Optimal Control</span><span class="chip">LSTM</span></div></article>
+      <article class="pub"><div class="pub-title">Event-Triggered Dynamic Seed Invasive Weed Optimization (ET-DSIWO): A Nature-Inspired Approach for Non-Stationary Optimization</div><div class="pub-meta">M. Jalaeian Farimani, R. Khalili Amirabadi, M. Esmaeili Ranjbar, and S. Samadzadeh · Nonlinear Dynamics, 113, 27611-27636, 2025.</div><div class="chips"><span class="chip">Dynamic Optimization</span></div></article>
+      <article class="pub"><div class="pub-title">Towards Optimal Control of HPV Model Using Safe Reinforcement Learning with Actor-Critic Neural Networks</div><div class="pub-meta">R. Khalili Amirabadi, O. S. Fard, and M. Jalaeian Farimani · Expert Systems with Applications, 264, 2025.</div><div class="chips"><span class="chip">Actor-Critic</span><span class="chip">Safe Control</span></div></article>
+      <article class="pub"><div class="pub-title">Bi-Level Adaptive Computed-Current Impedance Controller for Electrically Driven Robots</div><div class="pub-meta">M. Jalaeian-Farimani, M. M. Fateh, and M. Rahimiyan · Robotica, 39(2), 200-216, 2021.</div><div class="chips"><span class="chip">Robot Control</span><span class="chip">Impedance Control</span></div></article>
+      <article class="pub"><div class="pub-title">Optimal Predictive Impedance Control in the Presence of Uncertainty for a Lower Limb Rehabilitation Robot</div><div class="pub-meta">M. Jalaeian-Farimani, M. M. Fateh, and M. Rahimiyan · Journal of Systems Science and Complexity, 33(5), 1310-1329, 2020.</div><div class="chips"><span class="chip">Predictive Control</span><span class="chip">Rehabilitation Robotics</span></div></article>
+      <article class="pub"><div class="pub-title">Position Tracking of a 3-PSP Parallel Robot Using Dynamic Growing Interval Type-2 Fuzzy Neural Control</div><div class="pub-meta">S. F. Toloue, M. R. Akbarzadeh, A. Akbarzadeh, and M. Jalaeian-Farimani · Applied Soft Computing, 37, 1-14, 2015.</div><div class="chips"><span class="chip">Fuzzy-Neural Control</span><span class="chip">Parallel Robot</span></div></article>
+      <div class="callout">For the exhaustive and current record, use the linked <a href="https://scholar.google.com/citations?hl=en&amp;user=LU7XWE8AAAAJ">Google Scholar</a> profiles.</div>
     </section>
-    <footer>© <span id="year"></span> Mohsen Jalaeian-Farimani</footer>
+
+    <section id="teaching" aria-labelledby="teaching-title">
+      <h3 id="teaching-title">Teaching and Educational Activities</h3>
+      <p class="teaching-intro">Over 15 years of university teaching and academic supervision across Politecnico di Milano (Italy), Ferdowsi University of Mashhad, and Montazeri Technical College of Mashhad (Iran). My teaching connects mathematical foundations, computational methods, and hands-on engineering practice.</p>
+      <div class="teaching-grid">
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Core engineering education</span>
+          <h4>Control Engineering &amp; Robotics</h4>
+          <p>Course design and teaching in linear, nonlinear, digital, modern, and advanced control; robotics and robotic sensing; and industrial automation. At Politecnico di Milano, I had full responsibility for the Master's-level <strong>Advanced Feedback Control Design</strong> course, including lectures, exercises, and laboratories.</p>
+        </article>
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Intelligent and computational methods</span>
+          <h4>AI, Machine Learning &amp; Optimization</h4>
+          <p>Graduate-level teaching in <strong>Reinforcement Learning</strong> and <strong>Pattern Recognition and Classification</strong>, alongside courses in Machine Learning and Optimization, Soft Computing, and Simulation. Teaching links mathematical modelling with computation and robotic applications, including MATLAB, ROS/Gazebo, and ROS 2/Nav2.</p>
+        </article>
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Research education</span>
+          <h4>Student Supervision &amp; Mentorship</h4>
+          <p>Supervision of <strong>one completed PhD, three MSc, and over 80 bachelor's students</strong>. I emphasize clear research questions, mathematical and computational modelling, reproducible implementation, experimental validation, scientific writing, and progressive research independence.</p>
+        </article>
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Documented teaching record</span>
+          <h4>Teaching Quality &amp; Innovation</h4>
+          <p><strong>Best Lecturer Award (2023)</strong> and <strong>Outstanding Faculty Supervisor (2015–2017)</strong>. Across 29 official course/class evaluations at Montazeri Technical College (2015/16–2018/19), the <strong>unweighted mean was 18.81/20</strong>. Formal pedagogical development includes teaching innovation (2026) and enhanced PhD supervision (2025) at Politecnico di Milano.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="academic-events">
+      <h3>Special Issue &amp; Conference</h3>
+      <div class="event-grid">
+        <article class="event-card">
+          <h4>Special Issue Call for Papers</h4>
+          <div class="event-role">Guest Editor</div>
+          <div class="event-meta"><strong>Journal:</strong> Journal of Intelligent Monitoring and Control Systems (JIMCS)</div>
+          <div class="event-meta"><strong>Submission deadline:</strong> 31 October 2026</div>
+          <div class="event-meta"><strong>Final decision announcement:</strong> 31 January 2027</div>
+          <a class="event-link" href="https://www.volksonpress.com/journal/jimcs/call-for-papers/2084162466402562049" target="_blank" rel="noopener noreferrer">View the official call for papers →</a>
+        </article>
+
+        <article class="event-card">
+          <h4>2027 International Conference on Robotics and Intelligent Control (ICRIC 2027)</h4>
+          <div class="event-role">Publicity Chair</div>
+          <div class="event-meta"><strong>Date:</strong> 17-19 February 2027</div>
+          <div class="event-meta"><strong>Location:</strong> Milan, Italy</div>
+          <div class="event-meta"><strong>Scope:</strong> Robotics, intelligent control, autonomous systems, machine learning in control, and industrial control technologies.</div>
+          <a class="event-link" href="https://icric.org/" target="_blank" rel="noopener noreferrer">Visit the conference website →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="service">
+      <h3>Academic Service and Collaboration</h3>
+      <div class="grid">
+        <div class="card"><span class="label">Research collaboration</span>Interdisciplinary work spanning control engineering, robotics, machine learning, optimization, and applied mathematics.</div>
+        <div class="card"><span class="label">Laboratory activity</span>ROSETEA Laboratory, Department of Electronics, Information and Bioengineering, Politecnico di Milano.</div>
+        <div class="card"><span class="label">Supervision</span>Research mentoring and collaboration with graduate students and early-career researchers.</div>
+      </div>
+    </section>
+    <div class="footer">© <span id="year"></span> Mohsen Jalaeian-Farimani · Last updated <span id="updated"></span></div>
   </main>
 </div>
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('updated').textContent='August 2026';
   const links=[...document.querySelectorAll('nav a')], sections=[...document.querySelectorAll('main section')];
-  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}}),{rootMargin:'-35% 0px -55%'});
-  sections.forEach(section=>observer.observe(section));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}}),{rootMargin:'-30% 0px -60%'});
+  sections.forEach(s=>observer.observe(s));
 </script>
 </body>
 </html>
