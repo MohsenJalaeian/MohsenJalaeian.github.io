@@ -25,6 +25,26 @@
     .teaching-card strong{color:var(--navy);font-weight:750}
     @media(max-width:650px){.teaching-grid{grid-template-columns:1fr}.teaching-card{padding:20px}}
     @media print{.teaching-card{break-inside:avoid}}
+
+    /* Visible access to the existing research gallery - homepage additions only */
+    .sidebar nav a.gallery-nav-link{gap:8px;margin-top:7px;background:rgba(136,196,192,.11);border-left-color:#88c4c0;color:#fff;font-weight:700}
+    .sidebar nav a.gallery-nav-link:hover,.sidebar nav a.gallery-nav-link:focus-visible{background:rgba(136,196,192,.23);text-decoration:none}
+    .gallery-nav-icon{width:18px;height:18px;flex:none;color:#a3d7d0}
+    .hero-gallery-cta{display:inline-flex;align-items:center;gap:10px;margin-top:24px;padding:11px 17px;border-radius:8px;background:var(--blue);color:#fff;font-size:.94rem;font-weight:750;line-height:1.35;position:relative;z-index:1;box-shadow:0 5px 12px rgba(28,96,133,.15);transition:background .15s ease,transform .15s ease}
+    .hero-gallery-cta:hover,.hero-gallery-cta:focus-visible{background:#104766;color:#fff;text-decoration:none;transform:translateY(-1px)}
+    .hero-gallery-cta svg{width:18px;height:18px;flex:none}
+    .research-gallery-feature{margin-top:23px;display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,.9fr);gap:18px;align-items:stretch;border:1px solid #cddfe4;border-radius:12px;background:linear-gradient(130deg,#f1f8f9,#f8fbfc);overflow:hidden}
+    .research-gallery-feature-copy{padding:22px 0 22px 24px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+    .research-gallery-kicker{font-size:.69rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:800;margin-bottom:7px}
+    .research-gallery-feature h4{font-size:1.16rem;line-height:1.35;margin:0 0 7px;color:var(--navy)}
+    .research-gallery-feature p{font-size:.91rem;line-height:1.6;color:#4c6271;margin:0 0 13px}
+    .research-gallery-feature-link{font-weight:750;font-size:.89rem;display:inline-flex;align-items:center;gap:8px}
+    .research-gallery-preview{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;padding:8px;min-height:178px;text-decoration:none}
+    .research-gallery-preview img{display:block;min-width:0;width:100%;height:100%;max-height:190px;object-fit:cover;object-position:center;border-radius:5px;transition:filter .2s ease}
+    .research-gallery-preview:hover img{filter:brightness(.93)}
+    .research-gallery-preview:focus-visible,.research-gallery-feature-link:focus-visible,.hero-gallery-cta:focus-visible,.gallery-nav-link:focus-visible{outline:3px solid #4e9c97;outline-offset:3px}
+    @media(max-width:720px){.research-gallery-feature{grid-template-columns:1fr;gap:0}.research-gallery-feature-copy{padding:20px 20px 8px}.research-gallery-preview{min-height:150px;max-height:177px;padding:9px 12px 12px}.research-gallery-preview img{max-height:156px}}
+    @media(prefers-reduced-motion:reduce){.hero-gallery-cta,.research-gallery-preview img{transition:none}.hero-gallery-cta:hover{transform:none}}
   </style>
 </head>
 <body>
@@ -40,6 +60,7 @@
       <a href="#education">Education</a>
       <a href="#interests">Research Interests</a>
       <a href="#projects">Research Projects</a>
+      <a class="gallery-nav-link" href="gallery.html"><svg class="gallery-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> Research Gallery</a>
       <a href="#publications">Publications</a>
       <a href="#teaching">Teaching</a>
       <a href="#academic-events">Special Issue &amp; Conference</a>
@@ -58,6 +79,7 @@
       <div class="eyebrow">Control · Robotics · Optimization · Machine Learning</div>
       <h2>Intelligent control and learning methods for autonomous and robotic systems</h2>
       <p>My research combines model-based control, reinforcement learning, optimization, and machine learning to develop reliable and computationally efficient methods for nonlinear systems, mobile robots, autonomous systems, safety-critical decision-making, rehabilitation, human-robot interaction, and healthcare applications.</p>
+      <a class="hero-gallery-cta" href="gallery.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>Explore Research Gallery <span aria-hidden="true">&rarr;</span></a>
     </header>
 
     <section id="contact">
@@ -104,13 +126,19 @@
       <article class="project"><h4>Reinforcement Learning-Model Predictive Control Integration</h4><p>Systematic analysis and methodological development of RL-MPC architectures, with emphasis on linear and linearized models, constraints, robustness, sample efficiency, and closed-loop guarantees.</p></article>
       <article class="project"><h4>Autonomous Navigation and Cooperative Mobile Robotics</h4><p>ROS 2/Nav2-based navigation, learning-enhanced motion prediction, autonomous mobile robotics, and cooperative multi-robot control using model predictive path integral (MPPI) methods.</p></article>
       <article class="project"><h4>Dynamic and Non-Stationary Optimization</h4><p>Development of event-triggered and population-based optimization methods for dynamic environments, engineering optimization, and real-time adaptation.</p></article>
-      <div class="callout" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
-        <div style="flex:1 1 340px">
-          <strong style="color:var(--navy)">Research &amp; Robotics Gallery</strong>
-          <p style="margin:4px 0 0;color:var(--muted);font-size:.91rem">Explore original photographs of selected robotic platforms, experimental setups, and research software.</p>
+      <aside class="research-gallery-feature" aria-label="Research and robotics gallery preview">
+        <div class="research-gallery-feature-copy">
+          <span class="research-gallery-kicker">Research in practice</span>
+          <h4>Research &amp; Robotics Gallery</h4>
+          <p>Explore original photographs of selected robotic platforms, experimental setups, and research software.</p>
+          <a class="research-gallery-feature-link" href="gallery.html">Explore the gallery <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <a href="gallery.html" style="font-weight:800;white-space:nowrap" aria-label="Open the Research and Robotics Gallery">Explore the gallery &rarr;</a>
-      </div>
+        <a class="research-gallery-preview" href="gallery.html" aria-label="View the research gallery of original project photographs">
+          <img src="images/gallery/agricultural-field-robot.webp" alt="Autonomous agricultural robot in a field" loading="lazy" decoding="async">
+          <img src="images/gallery/three-psp-parallel-robot.webp" alt="3-PSP parallel robot experimental testbed" loading="lazy" decoding="async">
+          <img src="images/gallery/delta-robot-3d-printer.webp" alt="Delta-robot additive manufacturing platform" loading="lazy" decoding="async">
+        </a>
+      </aside>
     </section>
 
     <section id="publications">
