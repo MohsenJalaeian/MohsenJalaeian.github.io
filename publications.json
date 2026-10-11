@@ -1,0 +1,259 @@
+{
+  "author": "Mohsen Jalaeian-Farimani",
+  "orcid": "https://orcid.org/0000-0002-4910-309X",
+  "website": "https://mohsenjalaeian.github.io",
+  "generated": "2026-10-11",
+  "publication_records": [
+    {
+      "title": "Experience replay in reinforcement learning: A systematic review",
+      "authors": [
+        "Roya Khalili Amirabadi",
+        "Mohsen Jalaeian Farimani",
+        "Omid Solaymani Fard"
+      ],
+      "journal": "Neurocomputing",
+      "year": 2026,
+      "volume": "700",
+      "doi": "10.1016/j.neucom.2026.134403",
+      "doi_url": "https://doi.org/10.1016/j.neucom.2026.134403",
+      "publication_page": "https://mohsenjalaeian.github.io/papers/experience-replay-systematic-review.html",
+      "publication_type": "journal article",
+      "keywords": [
+        "experience replay",
+        "reinforcement learning",
+        "systematic literature review",
+        "PRISMA",
+        "prioritized experience replay",
+        "hindsight experience replay",
+        "replay buffer",
+        "memory management"
+      ],
+      "article_number": "134403"
+    },
+    {
+      "title": "Self-Organizing Dual-Buffer Adaptive Clustering Experience Replay (SODACER) for safe reinforcement learning in optimal control",
+      "authors": [
+        "Roya Khalili-Amirabadi",
+        "Mohsen Jalaeian-Farimani",
+        "Omid Solaymani-Fard"
+      ],
+      "journal": "Scientific Reports",
+      "year": 2026,
+      "volume": "16",
+      "doi": "10.1038/s41598-026-44517-1",
+      "doi_url": "https://doi.org/10.1038/s41598-026-44517-1",
+      "publication_page": "https://mohsenjalaeian.github.io/papers/sodacer-safe-reinforcement-learning.html",
+      "publication_type": "journal article",
+      "keywords": [
+        "SODACER",
+        "safe reinforcement learning",
+        "experience replay",
+        "dual-buffer",
+        "adaptive clustering",
+        "Control Barrier Functions",
+        "Sophia optimizer",
+        "nonlinear optimal control",
+        "HPV model"
+      ],
+      "article_number": "14960"
+    },
+    {
+      "title": "LSTM-empowered reinforcement learning in Bi-level optimal control for nonlinear systems with uncertain dynamics",
+      "authors": [
+        "Roya Khalili Amirabadi",
+        "Mohsen Jalaeian-Farimani",
+        "Omid S. Fard"
+      ],
+      "journal": "ISA Transactions",
+      "year": 2026,
+      "volume": "168",
+      "doi": "10.1016/j.isatra.2025.11.027",
+      "doi_url": "https://doi.org/10.1016/j.isatra.2025.11.027",
+      "publication_page": "https://mohsenjalaeian.github.io/papers/lstm-bilevel-optimal-control.html",
+      "publication_type": "journal article",
+      "keywords": [
+        "LSTM",
+        "actor-critic reinforcement learning",
+        "bi-level optimal control",
+        "uncertain nonlinear systems",
+        "uniform ultimate boundedness",
+        "skid-steering tracked robot",
+        "slip disturbance"
+      ],
+      "pages": "465–478"
+    },
+    {
+      "title": "Event-triggered dynamic seed invasive weed optimization (ET-DSIWO): a nature-inspired approach for non-stationary optimization",
+      "authors": [
+        "Mohsen Jalaeian Farimani",
+        "Roya Khalili Amirabadi",
+        "Mohsen Esmaeili Ranjbar",
+        "Shima Samadzadeh"
+      ],
+      "journal": "Nonlinear Dynamics",
+      "year": 2025,
+      "volume": "113",
+      "doi": "10.1007/s11071-025-11513-5",
+      "doi_url": "https://doi.org/10.1007/s11071-025-11513-5",
+      "publication_page": "https://mohsenjalaeian.github.io/papers/et-dsiwo-dynamic-optimization.html",
+      "publication_type": "journal article",
+      "keywords": [
+        "ET-DSIWO",
+        "nonstationary optimization",
+        "dynamic seed bank management",
+        "event-triggered re-evaluation",
+        "invasive weed optimization",
+        "time-varying objective",
+        "metaheuristic optimization"
+      ],
+      "pages": "27611–27636"
+    },
+    {
+      "title": "Model Predictive Control of Wind Turbines: A Model-Oriented Review of Prediction Models, Control Objectives, and Nonlinear Aerodynamic Formulations",
+      "journal": "Journal of Intelligent Monitoring and Control Systems",
+      "citation_details": "1(1), 36–41",
+      "authors": [
+        "Roya Khalili Amirabadi",
+        "Mohsen Jalaeian-Farimani",
+        "Mahdi Ghane"
+      ],
+      "year": 2026,
+      "doi": "10.65098/jimcs.01.2026.36.41",
+      "doi_url": "https://doi.org/10.65098/jimcs.01.2026.36.41",
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Improved Control of Uncertain Chaotic Systems Using Hybrid Fuzzy Sliding Mode Techniques: Chattering Elimination and Robust Performance",
+      "journal": "Fuzzy Sets and Systems",
+      "citation_details": "542, 109944",
+      "authors": [
+        "Roya Khalili Amirabadi",
+        "Omid Solaymani Fard",
+        "Amin Mansoori",
+        "Mohsen Jalaeian-Farimani"
+      ],
+      "year": 2026,
+      "doi": "10.1016/j.fss.2026.109944",
+      "doi_url": "https://doi.org/10.1016/j.fss.2026.109944",
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Towards optimal control of HPV model using safe reinforcement learning with actor–critic neural networks",
+      "journal": "Expert Systems with Applications",
+      "citation_details": "264, 125783",
+      "authors": [
+        "Roya Khalili Amirabadi",
+        "Omid Solaymani Fard",
+        "Mohsen Jalaeian-Farimani"
+      ],
+      "year": 2025,
+      "doi": "10.1016/j.eswa.2024.125783",
+      "doi_url": "https://doi.org/10.1016/j.eswa.2024.125783",
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Bi-Level Adaptive Computed-Current Impedance Controller for Electrically Driven Robots",
+      "journal": "Robotica",
+      "citation_details": "39(2), 200–216",
+      "authors": [
+        "Mohsen Jalaeian-Farimani",
+        "M. M. Fateh",
+        "M. Rahimiyan"
+      ],
+      "year": 2021,
+      "doi": "10.1017/S0263574720000314",
+      "doi_url": "https://doi.org/10.1017/S0263574720000314",
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Optimal Predictive Impedance Control in the Presence of Uncertainty for a Lower Limb Rehabilitation Robot",
+      "journal": "Journal of System Science and Complexity",
+      "citation_details": "33(5), 1310–1329",
+      "authors": [
+        "Mohsen Jalaeian-Farimani",
+        "M. M. Fateh",
+        "M. Rahimiyan"
+      ],
+      "year": 2020,
+      "doi": "10.1007/s11424-020-8335-5",
+      "doi_url": "https://doi.org/10.1007/s11424-020-8335-5",
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Optimal Impedance Voltage-Controller for Electrically Driven Robots",
+      "journal": "International Journal of Industrial Electronics, Control and Optimization",
+      "citation_details": "3(4), 483–490",
+      "authors": [
+        "Mohsen Jalaeian-Farimani",
+        "M. M. Fateh",
+        "M. Rahimiyan"
+      ],
+      "year": 2020,
+      "doi": "10.22111/ieco.2020.33183.1247",
+      "doi_url": "https://doi.org/10.22111/ieco.2020.33183.1247",
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Position Tracking of a 3-PSP Parallel Robot Using Dynamic Growing Interval Type-2 Fuzzy Neural Control",
+      "journal": "Applied Soft Computing",
+      "citation_details": "37, 1–14",
+      "authors": [
+        "S. F. Tolue",
+        "M.-R. Akbarzadeh-T",
+        "A. Akbarzadeh",
+        "Mohsen Jalaeian-Farimani"
+      ],
+      "year": 2015,
+      "doi": "10.1016/j.asoc.2015.07.015",
+      "doi_url": "https://doi.org/10.1016/j.asoc.2015.07.015",
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Augmented Downhill Simplex a Modified Heuristic Optimization Method",
+      "journal": "Journal of Computer & Robotics",
+      "citation_details": "5(2)",
+      "authors": [
+        "Mohsen Jalaeian-Farimani"
+      ],
+      "year": 2012,
+      "doi": null,
+      "doi_url": null,
+      "publication_type": "journal article"
+    },
+    {
+      "title": "Risk-Constrained MPPI Tuning with Update-Aware MA-ES Racing",
+      "year": 2026,
+      "record_url": "https://optimization-online.org/?p=37297",
+      "authors": [
+        "Morteza Kimiaei",
+        "Roya Khalili-Amirabadi",
+        "Mohsen Jalaeian-Farimani"
+      ],
+      "publication_type": "preprint_or_working_paper"
+    },
+    {
+      "title": "ETM-3D: A One-Parameter Multistable Quadratic Flow with an Explicit Absorbing Set and Intermittent Chaos",
+      "year": 2026,
+      "record_url": "https://arxiv.org/abs/2610.04768",
+      "authors": [
+        "Roya Khalili Amirabadi",
+        "Mohsen Jalaeian-Farimani"
+      ],
+      "publication_type": "preprint_or_working_paper"
+    },
+    {
+      "title": "A Systematic Review and Taxonomy of Reinforcement Learning-Model Predictive Control Integration for Linear Systems",
+      "year": 2026,
+      "record_url": "https://arxiv.org/abs/2604.21030",
+      "authors": [
+        "Mohsen Jalaeian-Farimani",
+        "Roya Khalili Amirabadi",
+        "Davoud Nikkhouy",
+        "Malihe Abdolbaghi",
+        "Mahshad Rastegar M.",
+        "Shima Samadzadeh"
+      ],
+      "publication_type": "preprint_or_working_paper"
+    }
+  ]
+}

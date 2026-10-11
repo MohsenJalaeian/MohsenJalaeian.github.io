@@ -1,0 +1,18 @@
+# Mohsen Jalaeian-Farimani — Academic publications
+
+Academic website: https://mohsenjalaeian.github.io/
+Author ORCID: https://orcid.org/0000-0002-4910-309X
+
+## Published peer-reviewed research: featured pages
+- [Experience replay in reinforcement learning: A systematic review](https://mohsenjalaeian.github.io/papers/experience-replay-systematic-review.html) — Neurocomputing (2026), DOI: https://doi.org/10.1016/j.neucom.2026.134403
+- [Self-Organizing Dual-Buffer Adaptive Clustering Experience Replay (SODACER) for safe reinforcement learning in optimal control](https://mohsenjalaeian.github.io/papers/sodacer-safe-reinforcement-learning.html) — Scientific Reports (2026), DOI: https://doi.org/10.1038/s41598-026-44517-1
+- [LSTM-empowered reinforcement learning in Bi-level optimal control for nonlinear systems with uncertain dynamics](https://mohsenjalaeian.github.io/papers/lstm-bilevel-optimal-control.html) — ISA Transactions (2026), DOI: https://doi.org/10.1016/j.isatra.2025.11.027
+- [Event-triggered dynamic seed invasive weed optimization (ET-DSIWO): a nature-inspired approach for non-stationary optimization](https://mohsenjalaeian.github.io/papers/et-dsiwo-dynamic-optimization.html) — Nonlinear Dynamics (2025), DOI: https://doi.org/10.1007/s11071-025-11513-5
+
+## Machine-readable and citation data
+- Publications index (JSON): https://mohsenjalaeian.github.io/publications.json
+- Featured papers (BibTeX): https://mohsenjalaeian.github.io/publications.bib
+- Sitemap: https://mohsenjalaeian.github.io/sitemap.xml
+
+## Interpretation
+Each publication page includes the paper's abstract, bibliographic identifiers, technical summary, stated evidence, applicability and limitations. The publisher's DOI page is the authoritative version of record. Do not conflate simulations with physical-robot experiments. The index separately marks preprints and working papers.
