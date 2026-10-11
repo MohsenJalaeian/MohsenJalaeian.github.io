@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Selected real-world robotic research platforms and experimental control systems developed with Mohsen Jalaeian-Farimani, including autonomous mobile robots, ROS 2 software, rehabilitation robotics, parallel robots, and industrial automation.">
+<meta name="author" content="Mohsen Jalaeian-Farimani">
+<title>Research & Robotics Gallery | Mohsen Jalaeian-Farimani</title>
+<style>
+:root{--navy:#0b2538;--navy2:#153e54;--ink:#183247;--teal:#287e7b;--blue:#1c6085;--muted:#667e8d;--paper:#f5f8fa;--line:#dbe4e9;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.6}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}button{font:inherit}img{max-width:100%;display:block}
+.content{max-width:1140px;margin:0 auto;padding:0 30px}
+.page-top{background:var(--navy);color:#fff}
+.top-nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:25px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.16)}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}.brand img{height:45px;width:45px;object-fit:cover;border:2px solid rgba(255,255,255,.75);border-radius:100%}.brand strong{font-size:.96rem;line-height:1.2;display:block}.brand small{font-size:.73rem;color:#bed3dd;display:block;letter-spacing:.02em}.nav-home{border:1px solid rgba(255,255,255,.36);padding:9px 15px;border-radius:7px;font-size:.85rem;color:#e6f3f5;font-weight:650;white-space:nowrap}.nav-home:hover{color:white;background:rgba(255,255,255,.08);text-decoration:none}
+.hero{padding-top:59px;padding-bottom:61px;background:radial-gradient(circle at 88% 32%,#1b5264 0%,transparent 45%),linear-gradient(130deg,#0b2538,#153c50)}.eyebrow{color:#96d5cf;text-transform:uppercase;font-size:.73rem;letter-spacing:.17em;font-weight:850}.hero-layout{display:grid;grid-template-columns:.97fr 1.03fr;align-items:center;gap:42px}.hero h1{font-size:clamp(2rem,4.4vw,3.48rem);line-height:1.10;letter-spacing:-.025em;margin:14px 0 18px;color:#fff}.hero p{margin:0;color:#d2e3eb;font-size:1.01rem;max-width:510px}.hero-cta{display:inline-flex;align-items:center;gap:10px;margin-top:24px;color:#b2e3dc;font-size:.87rem;font-weight:750}.hero-cta:hover{color:white}.hero-gallery{display:grid;grid-template-columns:1.1fr .8fr;grid-template-rows:166px 166px;gap:11px}.hero-gallery img{border-radius:10px;width:100%;height:100%;object-fit:cover;box-shadow:0 12px 26px rgba(0,0,0,.23)}.hero-gallery img:first-child{grid-row:span 2;object-position:50% 60%}.hero-gallery img:nth-child(2){object-position:50% 48%}.hero-gallery img:nth-child(3){object-position:50% 54%}
+.anchor-wrap{background:#fff;border-bottom:1px solid var(--line)}.anchors{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-top:15px;padding-bottom:15px}.anchors a{color:#35566b;border:1px solid #d8e6e8;background:#f5faf9;border-radius:100px;padding:5px 12px;font-size:.76rem;font-weight:730}.anchors a:hover{background:#e4f3f1;text-decoration:none}
+.gallery-lead{padding-top:43px;padding-bottom:12px}.gallery-lead h2{font-size:1.34rem;margin:0 0 7px;color:var(--navy)}.gallery-lead p{margin:0;color:var(--muted);max-width:800px;font-size:.94rem}
+.project-section{background:#fff;border:1px solid var(--line);border-radius:15px;padding:32px 34px 25px;margin:24px 0;box-shadow:0 8px 24px rgba(11,37,56,.035);scroll-margin-top:20px}.section-head{display:flex;align-items:start;gap:20px}.section-number{font-size:1.55rem;font-weight:850;line-height:1;min-width:44px;color:#2f8986;letter-spacing:-.04em}.section-label{display:block;text-transform:uppercase;font-size:.72rem;letter-spacing:.09em;font-weight:850;color:#328380;margin:0 0 4px}.project-section h2{font-size:1.54rem;line-height:1.32;color:var(--navy);margin:0 0 9px}.section-head p{color:#5f7484;margin:0;font-size:.94rem;max-width:820px}.section-role{border-left:3px solid #a5d3ce;background:#f1f7f7;padding:9px 13px;margin:21px 0 20px;font-size:.84rem;color:#466373}.section-role span{font-size:.68rem;color:#2e7673;font-weight:850;letter-spacing:.085em;margin-right:8px}
+.visual-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.visual-grid.single{grid-template-columns:minmax(0,660px)}.visual-card{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#fff}.visual-button{position:relative;display:block;width:100%;border:0;background:#edf2f4;padding:0;cursor:zoom-in;text-align:left}.image-shell{display:flex;justify-content:center;align-items:center;height:276px;background:#ebeff1;overflow:hidden}.image-shell img{height:100%;width:100%;object-fit:contain;transition:transform .28s ease}.visual-button:hover img{transform:scale(1.025)}.zoom-mark{position:absolute;right:12px;top:12px;background:rgba(11,37,56,.81);color:white;border-radius:8px;padding:3px 10px;font-size:1.2rem}.visual-button:focus-visible{outline:3px solid #3b9b94;outline-offset:-3px}.visual-card figcaption{display:flex;flex-direction:column;gap:5px;padding:15px 18px 17px}.visual-card figcaption strong{font-size:.93rem;color:var(--navy)}.visual-card figcaption span{font-size:.83rem;color:#607a89;line-height:1.54}.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:19px}.tag-row span{font-size:.74rem;color:#3c7380;font-weight:680;background:#eaf3f5;border:1px solid #d7e8ec;padding:5px 10px;border-radius:20px}
+.bottom-cta{background:#e6f1f2;border:1px solid #cfe3e5;padding:23px;border-radius:13px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:31px 0 55px}.bottom-cta p{margin:4px 0 0;color:#607985;font-size:.9rem}.bottom-cta h2{font-size:1.07rem;margin:0;color:#123649}.bottom-cta a{background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;font-size:.85rem;font-weight:730}.bottom-cta a:hover{text-decoration:none;background:#22516b}
+.site-footer{background:#0b2538;padding:26px 0;color:#b9d1dd;font-size:.8rem}.site-footer .content{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.site-footer a{color:#cbe6ee}
+.image-dialog{padding:0;border:0;border-radius:13px;max-width:min(94vw,1150px);max-height:93vh;overflow:hidden;background:#0c1d28;color:white;box-shadow:0 28px 70px rgba(0,0,0,.4)}.image-dialog::backdrop{background:rgba(1,14,23,.84)}.dialog-img{display:block;max-width:90vw;max-height:78vh;width:auto;height:auto;object-fit:contain;margin:0 auto}.dialog-tools{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:11px 15px;font-size:.86rem}.dialog-close{cursor:pointer;border:1px solid rgba(255,255,255,.35);background:#1a4055;color:#fff;border-radius:7px;padding:5px 12px}
+@media (max-width:850px){.hero-layout{grid-template-columns:1fr}.hero-gallery{grid-template-rows:150px 150px;max-width:650px}.hero{padding-top:42px;padding-bottom:47px}.project-section{padding:24px 22px}.content{padding-left:20px;padding-right:20px}}
+@media (max-width:570px){.brand small{font-size:.64rem}.brand strong{font-size:.79rem}.brand img{width:36px;height:36px}.nav-home{font-size:.75rem;padding:7px 8px}.hero h1{font-size:2.15rem}.hero-gallery{grid-template-rows:117px 117px;gap:7px}.visual-grid{grid-template-columns:1fr}.image-shell{height:240px}.project-section h2{font-size:1.23rem}.section-head{gap:11px}.section-number{font-size:1.27rem;min-width:32px}.section-role span{display:block;margin-bottom:3px}.anchors{gap:6px}.anchors a{font-size:.7rem;padding:5px 9px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.image-shell img{transition:none}}
+</style>
+</head>
+<body>
+<header class="page-top">
+ <div class="content top-nav">
+  <a class="brand" href="index.html" aria-label="Return to the academic homepage"><img src="foto.png" alt="Portrait of Mohsen Jalaeian-Farimani"><span><strong>Mohsen Jalaeian-Farimani</strong><small>Control Engineering · Robotics · Artificial Intelligence</small></span></a>
+  <a class="nav-home" href="index.html">&larr; Main website</a>
+ </div>
+ <div class="hero"><div class="content hero-layout">
+  <div><div class="eyebrow">Selected research & engineering work</div><h1>Research &amp;<br>Robotics Gallery</h1><p>From mathematical models and intelligent control to autonomous mobile robots, experimental testbeds, and research-led robotic platforms.</p><a class="hero-cta" href="#gallery-content">Explore the projects <span aria-hidden="true">&darr;</span></a></div>
+  <div class="hero-gallery" aria-label="Selected original project photographs"><img src="images/gallery/agricultural-field-robot.webp" alt="Autonomous tracked robot in an agricultural field"><img src="images/gallery/ground-control-station.webp" alt="Robotic field coverage interface"><img src="images/gallery/three-psp-parallel-robot.webp" alt="Parallel robot testbed"></div>
+ </div></div>
+</header>
+<div class="anchor-wrap"><nav class="content anchors" aria-label="Gallery project categories"><a href="#autonomous-robotics">Field robotics</a><a href="#localization">Localization</a><a href="#rehabilitation">Rehabilitation</a><a href="#parallel-robotics">Parallel robotics</a><a href="#industrial-platforms">Automation</a><a href="#human-centered">Human-centered robots</a></nav></div>
+<main class="content" id="gallery-content">
+ <div class="gallery-lead"><h2>Selected experimental platforms</h2><p>Photographs and software views from six research themes. Each project combines theoretical methods with the engineering work needed to implement, test, or operate robotic systems.</p></div>
+ <section class="project-section" id="autonomous-robotics" aria-labelledby="autonomous-robotics-title">
+  <div class="section-head"><span class="section-number">01</span><div><span class="section-label">Field robotics</span><h2 id="autonomous-robotics-title">Autonomous Agricultural Robotics</h2><p>Autonomous field operations combining ROS 2 / Nav2 navigation, coverage planning, internet-enabled mission supervision, and learning-enhanced control.</p></div></div>
+  <div class="section-role"><span>CONTRIBUTION</span> Research scientist, algorithm and software developer · RoSeTEA Laboratory, Politecnico di Milano</div>
+  <div class="visual-grid ">
+    <figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/agricultural-field-robot.webp" data-caption="Autonomous robot in the field" aria-label="Enlarge image: Autonomous robot in the field">
+    <span class="image-shell"><img src="images/gallery/agricultural-field-robot.webp" alt="Photograph of a researcher standing next to an autonomous tracked robot in an agricultural field." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>Autonomous robot in the field</strong><span>Tracked agricultural mobile-robot platform used for outdoor research and field operations.</span></figcaption>
+</figure><figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/ground-control-station.webp" data-caption="Field coverage and mission supervision" aria-label="Enlarge image: Field coverage and mission supervision">
+    <span class="image-shell"><img src="images/gallery/ground-control-station.webp" alt="Screenshot of a satellite map with robot field-coverage waypoints and ground control interfaces." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>Field coverage and mission supervision</strong><span>Map-based ground-control-station interface for field coverage and internet-connected monitoring.</span></figcaption>
+</figure>
+  </div>
+  <div class="tag-row"><span>ROS 2 / Nav2</span><span>Field coverage</span><span>Remote supervision</span><span>MPPI &amp; reinforcement learning</span></div>
+</section>
+<section class="project-section" id="localization" aria-labelledby="localization-title">
+  <div class="section-head"><span class="section-number">02</span><div><span class="section-label">Modelling & estimation</span><h2 id="localization-title">Mobile-Robot Modelling & Localization</h2><p>Experimental research on tracked-robot dynamics, slip estimation, model–reality mismatch learning, and localization across indoor and outdoor settings.</p></div></div>
+  <div class="section-role"><span>CONTRIBUTION</span> Researcher and ROS 2 software developer</div>
+  <div class="visual-grid single">
+    <figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/mobile-robot-laboratory.webp" data-caption="Tracked robot in the laboratory" aria-label="Enlarge image: Tracked robot in the laboratory">
+    <span class="image-shell"><img src="images/gallery/mobile-robot-laboratory.webp" alt="Researcher sitting beside a tracked mobile robot in a motion-capture laboratory." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>Tracked robot in the laboratory</strong><span>Indoor platform used in mobile-robot motion estimation and control research.</span></figcaption>
+</figure>
+  </div>
+  <div class="tag-row"><span>Gaussian processes</span><span>Slip estimation</span><span>Vicon motion tracking</span><span>GPS–EKF</span></div>
+</section>
+<section class="project-section" id="rehabilitation" aria-labelledby="rehabilitation-title">
+  <div class="section-head"><span class="section-number">03</span><div><span class="section-label">Human–robot interaction</span><h2 id="rehabilitation-title">Rehabilitation Robotics & Impedance Control</h2><p>A knee-rehabilitation platform for investigating uncertainty-aware nonlinear control and predictive impedance control in physical human–robot interaction.</p></div></div>
+  <div class="section-role"><span>CONTRIBUTION</span> Faculty supervisor; contributor to mechanism design and control development</div>
+  <div class="visual-grid single">
+    <figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/rehabilitation-knee-robot.webp" data-caption="Knee rehabilitation research platform" aria-label="Enlarge image: Knee rehabilitation research platform">
+    <span class="image-shell"><img src="images/gallery/rehabilitation-knee-robot.webp" alt="Two photographs showing a leg-worn rehabilitation robot being tested and the isolated robotic mechanism." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>Knee rehabilitation research platform</strong><span>Experimental leg-assistance mechanism and rehabilitation testing setup for passive range-of-motion studies.</span></figcaption>
+</figure>
+  </div>
+  <div class="tag-row"><span>Predictive impedance control</span><span>Nonlinear control</span><span>Experimental validation</span></div>
+</section>
+<section class="project-section" id="parallel-robotics" aria-labelledby="parallel-robotics-title">
+  <div class="section-head"><span class="section-number">04</span><div><span class="section-label">Parallel mechanisms</span><h2 id="parallel-robotics-title">3-PSP Parallel Robot: Position & Force Control</h2><p>Experimental research into position/force control and fuzzy-neural intelligent controllers for a 3-PSP parallel robotic platform.</p></div></div>
+  <div class="section-role"><span>CONTRIBUTION</span> Parallel-robot team manager; electrical, electronic and control engineer</div>
+  <div class="visual-grid ">
+    <figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/three-psp-parallel-robot.webp" data-caption="3-PSP parallel robot testbed" aria-label="Enlarge image: 3-PSP parallel robot testbed">
+    <span class="image-shell"><img src="images/gallery/three-psp-parallel-robot.webp" alt="A three-dimensional 3-PSP parallel robotic mechanism in a university laboratory." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>3-PSP parallel robot testbed</strong><span>Research apparatus for experimental position and force control.</span></figcaption>
+</figure><figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/parallel-robot-experiment.webp" data-caption="Parallel robotics laboratory research" aria-label="Enlarge image: Parallel robotics laboratory research">
+    <span class="image-shell"><img src="images/gallery/parallel-robot-experiment.webp" alt="Researcher alongside an experimental parallel robotic mechanism in a laboratory." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>Parallel robotics laboratory research</strong><span>Experimental work and integration of sensing, actuation, and controller electronics.</span></figcaption>
+</figure>
+  </div>
+  <div class="tag-row"><span>Position/force control</span><span>Fuzzy-neural control</span><span>Experimental control</span><span>Sensor integration</span></div>
+</section>
+<section class="project-section" id="industrial-platforms" aria-labelledby="industrial-platforms-title">
+  <div class="section-head"><span class="section-number">05</span><div><span class="section-label">Robotic prototyping</span><h2 id="industrial-platforms-title">Industrial Automation & Laboratory Platforms</h2><p>Research-led development of robotic platforms integrating mechanism design, electronics, motion control, firmware, software, and student projects.</p></div></div>
+  <div class="section-role"><span>CONTRIBUTION</span> Faculty supervisor and system designer; laboratory development</div>
+  <div class="visual-grid ">
+    <figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/delta-robot-3d-printer.webp" data-caption="Delta-robot 3D-printing platform" aria-label="Enlarge image: Delta-robot 3D-printing platform">
+    <span class="image-shell"><img src="images/gallery/delta-robot-3d-printer.webp" alt="Researcher standing next to a tall Delta-robot three-dimensional printing platform." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>Delta-robot 3D-printing platform</strong><span>Multidisciplinary robotic additive-manufacturing project combining mechanical, electrical, and control design.</span></figcaption>
+</figure><figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/scara-laboratory-robot.webp" data-caption="SCARA automation platform" aria-label="Enlarge image: SCARA automation platform">
+    <span class="image-shell"><img src="images/gallery/scara-laboratory-robot.webp" alt="SCARA robot arm and its experimental teaching setup in a robotics laboratory." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>SCARA automation platform</strong><span>Laboratory robot for pick-and-place operations, trajectory planning, and control education.</span></figcaption>
+</figure>
+  </div>
+  <div class="tag-row"><span>Delta robot</span><span>Robotic 3D printing</span><span>SCARA</span><span>Industrial automation</span></div>
+</section>
+<section class="project-section" id="human-centered" aria-labelledby="human-centered-title">
+  <div class="section-head"><span class="section-number">06</span><div><span class="section-label">Educational robotics</span><h2 id="human-centered-title">Human-Centered & Motion-Imitation Robots</h2><p>Student–faculty research and teaching platforms for intelligent robot control, human–robot interaction, motion generation, and experimental engineering education.</p></div></div>
+  <div class="section-role"><span>CONTRIBUTION</span> Faculty supervisor and system designer; research-project leadership</div>
+  <div class="visual-grid ">
+    <figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/qhb1-robot.webp" data-caption="QHB-1 human-centered robot" aria-label="Enlarge image: QHB-1 human-centered robot">
+    <span class="image-shell"><img src="images/gallery/qhb1-robot.webp" alt="Researcher standing beside the QHB-1 human-centered robot." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>QHB-1 human-centered robot</strong><span>Multidisciplinary robot developed for applied research and teaching in sensing, control, and intelligent robotics.</span></figcaption>
+</figure><figure class="visual-card">
+  <button class="visual-button" type="button" data-large="images/gallery/sagittal-motion-robot.webp" data-caption="Human sagittal-plane imitation robot" aria-label="Enlarge image: Human sagittal-plane imitation robot">
+    <span class="image-shell"><img src="images/gallery/sagittal-motion-robot.webp" alt="Composite photograph of an experimental human-motion imitation robot and student testing activities." loading="lazy" decoding="async" width="850" height="700"></span>
+    <span class="zoom-mark" aria-hidden="true">&#x2197;</span>
+  </button>
+  <figcaption><strong>Human sagittal-plane imitation robot</strong><span>Educational and experimental robot for generating and studying human-like sagittal-plane motion.</span></figcaption>
+</figure>
+  </div>
+  <div class="tag-row"><span>QHB-1</span><span>Human–robot interaction</span><span>Motion imitation</span><span>Student research</span></div>
+</section>
+ <div class="bottom-cta"><div><h2>Explore research, publications, and teaching</h2><p>Return to the main academic profile for the full research overview.</p></div><a href="index.html">Back to academic website &rarr;</a></div>
+</main>
+<footer class="site-footer"><div class="content"><span>&copy; 2026 Mohsen Jalaeian-Farimani</span><span>Research &amp; Robotics Gallery · <a href="mailto:mohsen.jalaeian@polimi.it">Contact</a></span></div></footer>
+<dialog id="image-dialog" class="image-dialog" aria-label="Enlarged project photograph"><img id="dialog-image" class="dialog-img" alt=""><div class="dialog-tools"><span id="dialog-caption"></span><button id="dialog-close" class="dialog-close" type="button" aria-label="Close enlarged photograph">Close &times;</button></div></dialog>
+<script>
+ const dialog=document.getElementById('image-dialog');
+ const dialogImage=document.getElementById('dialog-image');
+ const dialogCaption=document.getElementById('dialog-caption');
+ document.querySelectorAll('.visual-button').forEach(button=>button.addEventListener('click',()=>{
+   const img=button.querySelector('img');
+   dialogImage.src=button.dataset.large; dialogImage.alt=img.alt;
+   dialogCaption.textContent=button.dataset.caption;
+   if(dialog.showModal)dialog.showModal(); else window.open(button.dataset.large,'_blank');
+ }));
+ document.getElementById('dialog-close').addEventListener('click',()=>dialog.close());
+ dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+ dialog.addEventListener('close',()=>{dialogImage.removeAttribute('src');});
+</script>
+</body></html>

@@ -104,6 +104,13 @@
       <article class="project"><h4>Reinforcement Learning-Model Predictive Control Integration</h4><p>Systematic analysis and methodological development of RL-MPC architectures, with emphasis on linear and linearized models, constraints, robustness, sample efficiency, and closed-loop guarantees.</p></article>
       <article class="project"><h4>Autonomous Navigation and Cooperative Mobile Robotics</h4><p>ROS 2/Nav2-based navigation, learning-enhanced motion prediction, autonomous mobile robotics, and cooperative multi-robot control using model predictive path integral (MPPI) methods.</p></article>
       <article class="project"><h4>Dynamic and Non-Stationary Optimization</h4><p>Development of event-triggered and population-based optimization methods for dynamic environments, engineering optimization, and real-time adaptation.</p></article>
+      <div class="callout" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
+        <div style="flex:1 1 340px">
+          <strong style="color:var(--navy)">Research &amp; Robotics Gallery</strong>
+          <p style="margin:4px 0 0;color:var(--muted);font-size:.91rem">Explore original photographs of selected robotic platforms, experimental setups, and research software.</p>
+        </div>
+        <a href="gallery.html" style="font-weight:800;white-space:nowrap" aria-label="Open the Research and Robotics Gallery">Explore the gallery &rarr;</a>
+      </div>
     </section>
 
     <section id="publications">
@@ -171,10 +178,32 @@
 
     <section id="service">
       <h3>Academic Service and Collaboration</h3>
-      <div class="grid">
-        <div class="card"><span class="label">Research collaboration</span>Interdisciplinary work spanning control engineering, robotics, machine learning, optimization, and applied mathematics.</div>
-        <div class="card"><span class="label">Laboratory activity</span>ROSETEA Laboratory, Department of Electronics, Information and Bioengineering, Politecnico di Milano.</div>
-        <div class="card"><span class="label">Supervision</span>Research mentoring and collaboration with graduate students and early-career researchers.</div>
+      <div class="teaching-grid">
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Scientific publishing</span>
+          <h4>Editorial Board Memberships</h4>
+          <p><strong>International Journal of Advanced Robotic Systems (SAGE)</strong><br>
+          Editorial Board Member, Section: <em>Intelligent Robotics and Human-Machine Interaction</em>.<br>
+          <a href="https://journals.sagepub.com/editorial-board/ARX" target="_blank" rel="noopener noreferrer">Official Editorial Board &rarr;</a></p>
+          <p style="margin-top:13px"><strong>Journal of Intelligent Monitoring and Control Systems (JIMCS)</strong><br>
+          Editorial Committee Member.<br>
+          <a href="https://www.volksonpress.com/journal/jimcs/editorial-board" target="_blank" rel="noopener noreferrer">Official Editorial Committee &rarr;</a></p>
+        </article>
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Interdisciplinary networks</span>
+          <h4>Research Collaboration</h4>
+          <p>Interdisciplinary work spanning control engineering, robotics, machine learning, optimization, and applied mathematics.</p>
+        </article>
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Research environment</span>
+          <h4>Laboratory Activity</h4>
+          <p>ROSETEA Laboratory, Department of Electronics, Information and Bioengineering, Politecnico di Milano.</p>
+        </article>
+        <article class="teaching-card">
+          <span class="teaching-card-kicker">Academic mentoring</span>
+          <h4>Supervision</h4>
+          <p>Research mentoring and collaboration with graduate students and early-career researchers.</p>
+        </article>
       </div>
     </section>
     <div class="footer">© <span id="year"></span> Mohsen Jalaeian-Farimani · Last updated <span id="updated"></span></div>
@@ -182,7 +211,7 @@
 </div>
 <script>
   document.getElementById('year').textContent=new Date().getFullYear();
-  document.getElementById('updated').textContent='August 2026';
+  document.getElementById('updated').textContent='October 2026';
   const links=[...document.querySelectorAll('nav a')], sections=[...document.querySelectorAll('main section')];
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}}),{rootMargin:'-30% 0px -60%'});
   sections.forEach(s=>observer.observe(s));
